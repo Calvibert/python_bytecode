@@ -1,0 +1,18 @@
+Python is not an interpreted language, it is not a compiled language, but it is in fact a bytecode-compiled language.
+This means that it compiles, yes, but to bytecode instead of machine code and runs on a virtual machine, like Java and C#.
+
+In this project I used the dis and distb operation from the dis(sasembler) library.
+dis outputs the bytecode for a given python function
+distb looks at a Traceback and returns the bytecode instructions from the line where an exception took place.
+
+Useful variables were also used within the __code__ object such as:
+co_consts
+co_varnames
+co_code
+
+how python compile code is executed by the CPython project:
+https://github.com/python/cpython/blob/master/Python/ceval.c
+
+https://www.youtube.com/watch?v=weBXlLF6an8
+
+The inbuilt ord() function was also used. It returns the corresponding int of a unicode character.
