@@ -1,0 +1,19 @@
+<code object hello at 0x000001B79A293AE0, file "func.py", line 1>
+(None, 2, 1)
+('returnVal',)
+b'd\x01}\x00|\x00d\x02k\x04r\x10|\x00S\x00d\x00S\x00'
+124
+LOAD_FAST
+  2           0 LOAD_CONST               1 (2)
+              2 STORE_FAST               0 (returnVal)
+
+  3           4 LOAD_FAST                0 (returnVal)
+              6 LOAD_CONST               2 (1)
+              8 COMPARE_OP               4 (>)
+             10 POP_JUMP_IF_FALSE       16
+
+  4          12 LOAD_FAST                0 (returnVal)
+             14 RETURN_VALUE
+        >>   16 LOAD_CONST               0 (None)
+             18 RETURN_VALUE
+None
